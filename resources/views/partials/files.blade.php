@@ -1,3 +1,9 @@
+{{-- 
+    Проект: toskt-web
+    Файл: files.blade.php
+    Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
+--}}
+
 @foreach ($files as $file)
     <div class="flex justify-between bg-blue-400 w-300 p-5 rounded-xl">
         <div class="flex gap-3">

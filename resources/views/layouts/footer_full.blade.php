@@ -1,3 +1,9 @@
+{{-- 
+    Проект: toskt-web
+    Файл: footer_full.blade.php
+    Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
+--}}    
+    
     <footer>
         <div class="flex flex-col justify-between bg-[#0099ff]/80 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mb-5 mx-auto rounded-xl shadow-xl max-w-370">
             <div class="flex justify-center items-center gap-5 pt-5">

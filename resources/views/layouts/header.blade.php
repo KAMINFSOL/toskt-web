@@ -1,3 +1,9 @@
+{{-- 
+    Проект: toskt-web
+    Файл: header.blade.php
+    Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
+--}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
