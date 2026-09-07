@@ -4,17 +4,7 @@
     Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
 --}}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Профиль</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-    @vite('resources/css/app.css')
-</head>
-<body class="min-h-screen bg-[url('/public/images/wave.svg')] bg-no-repeat bg-bottom">
+@include('layouts.header', ['title' => 'Профиль', 'headerTitle' => 'Профиль'])
     <header class="flex justify-between bg-white/80 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
         <div class="flex gap-3 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
@@ -87,5 +77,6 @@
             </div>
         </div>
     </main>
+    @include('layouts.footer_lite')
 </body>
 </html>
