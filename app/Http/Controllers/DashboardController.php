@@ -10,7 +10,10 @@ class DashboardController extends Controller
     public function create()
     {
         $requests = DB::table('requests')->where('executor', Auth::user()->name)->latest()->take(3)->get();
+        $files = DB::table('files')->latest()->take(3)->get();
+
         return view('dashboard')
-            ->with('requests', $requests);
+            ->with('requests', $requests)
+            ->with('files', $files);
     }
 }
