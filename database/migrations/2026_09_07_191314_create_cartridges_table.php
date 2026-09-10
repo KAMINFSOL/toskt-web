@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('cartridges', function (Blueprint $table) {
             $table->id();
+            $table->string('subdivision');
+            $table->string('surname_name');
+            $table->string('cartridge_name');
+            $table->string('inventory_number')->nullable();
+            $table->integer('number_of_pieces');
             $table->timestamps();
         });
     }

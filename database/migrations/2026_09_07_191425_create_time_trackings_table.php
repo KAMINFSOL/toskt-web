@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('time_trackings', function (Blueprint $table) {
             $table->id();
+            $table->date('date');
+            $table->string('name');
+            $table->time('arrival_time');
+            $table->time('leave_time');
             $table->timestamps();
         });
     }
