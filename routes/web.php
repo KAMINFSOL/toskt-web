@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OperationController;
 use App\Http\Controllers\ProfileController;
@@ -22,6 +23,12 @@ Route::get('/dashboard', [DashboardController::class, 'create'])->middleware('au
 
 Route::get('/operations', [OperationController::class, 'create'])->middleware('auth')->name('operations');
 
-Route::get('/operation/requests', [RequestController::class, 'create'])->middleware('auth')->name('requests');
+Route::get('/operations/requests', [RequestController::class, 'create'])->middleware('auth')->name('requests');
+
+Route::get('/operations/inventory', [InventoryController::class, 'create'])->middleware('auth')->name('inventory');
+
+Route::get('/operations/inventory/new_cartridge', [InventoryController::class, 'newCartridge'])->middleware('auth')->name('new_cartridge');
+
+Route::post('/operations/inventory/new_cartridge', [InventoryController::class, 'store'])->middleware('auth')->name('new_cartridge');
 
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
