@@ -50,7 +50,7 @@ php artisan serve
 
 ## Лицензия
 
-MIT — подробнее в файле [LICENSE](./LICENSE)
+GNU — подробнее в файле [LICENSE](./LICENSE)
 
 ## Автор
 
