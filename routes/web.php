@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\KnowledgeBaseController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OperationController;
 use App\Http\Controllers\ProfileController;
@@ -30,5 +31,7 @@ Route::get('/operations/inventory', [InventoryController::class, 'create'])->mid
 Route::get('/operations/inventory/new_cartridge', [InventoryController::class, 'newCartridge'])->middleware('auth')->name('new_cartridge');
 
 Route::post('/operations/inventory/new_cartridge', [InventoryController::class, 'store'])->middleware('auth')->name('new_cartridge');
+
+Route::get('/operations/knowledge_base', [KnowledgeBaseController::class, 'create'])->middleware('auth')->name('knowledge_base');
 
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
