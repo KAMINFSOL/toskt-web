@@ -9,6 +9,7 @@ use App\Http\Controllers\PlanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RequestController;
+use App\Http\Controllers\TimeTrackingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LoginController::class, 'create'])->name('login');
@@ -36,5 +37,7 @@ Route::post('/operations/inventory/new_cartridge', [InventoryController::class, 
 Route::get('/operations/knowledge_base', [KnowledgeBaseController::class, 'create'])->middleware('auth')->name('knowledge_base');
 
 Route::get('/opreations/plans', [PlanController::class, 'create'])->middleware('auth')->name('plans');
+
+Route::get('/operations/time_tracking', [TimeTrackingController::class, 'create'])->middleware('auth')->name('time_tracking');
 
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
