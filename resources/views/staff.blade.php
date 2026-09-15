@@ -30,5 +30,6 @@
             </table>
         </div>
     </main>
+    @include('layouts.footer_lite')
 </body>
 </html>
