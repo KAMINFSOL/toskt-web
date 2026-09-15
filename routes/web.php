@@ -9,6 +9,7 @@ use App\Http\Controllers\PlanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RequestController;
+use App\Http\Controllers\StaffController;
 use App\Http\Controllers\TimeTrackingController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,3 +42,5 @@ Route::get('/opreations/plans', [PlanController::class, 'create'])->middleware('
 Route::get('/operations/time_tracking', [TimeTrackingController::class, 'create'])->middleware('auth')->name('time_tracking');
 
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
+
+Route::get('/profile/staff', [StaffController::class, 'create'])->middleware('auth')->name('staff');
