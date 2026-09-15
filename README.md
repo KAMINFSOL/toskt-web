@@ -5,11 +5,11 @@
 <h1 align="center">Учетно-сервисная платформа отдела ТОиСКТ</h1>
 <p align="center">Проект предназанчен для электронного учета заявок, оборудования и решения прочих рабочих вопросов</p>
 
-## Возможности
+## Технические особенности
 - REST API
 - Миграция БД
 
-## 🛠 Стек
+## Стек
 - **Frontend:** Tailwind CSS
 - **Backend:** Laravel
 - **База данных:** PostgreSQL
@@ -25,7 +25,7 @@
 git clone https://github.com/KAMINFSOL/toskt-web.git
 cd toskt-web
 ```
-### Установить зависимости (при необходимости)
+### Установить зависимости
 ```
 npm install tailwindcss @tailwindcss/vite
 ```
@@ -33,6 +33,8 @@ npm install tailwindcss @tailwindcss/vite
 ```
 cp .env.example .env
 ```
+> [!WARNING]
+> Необходимо ввести драйвер pqsql, имя и порт БД, которая развернута на сервере.
 ### Собрать проект и запустить сервер
 ```
 npm run build
