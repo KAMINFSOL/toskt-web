@@ -44,3 +44,5 @@ Route::get('/operations/time_tracking', [TimeTrackingController::class, 'create'
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
 
 Route::get('/profile/staff', [StaffController::class, 'create'])->middleware('auth')->name('staff');
+
+Route::get('/profile/accounting_journal', [StaffController::class, 'accounting_journal'])->middleware('auth')->name('accounting_journal');

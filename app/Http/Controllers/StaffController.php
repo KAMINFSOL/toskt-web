@@ -12,4 +12,9 @@ class StaffController extends Controller
         $users = DB::table('users')->get();
         return view('staff')->with('users', $users);
     }
+
+    public function accounting_journal()
+    {
+        return view("accounting_journal");
+    }
 }
