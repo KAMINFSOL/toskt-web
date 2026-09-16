@@ -4,7 +4,7 @@
     Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
 --}}
 
-@include('layouts.header', ['title' => 'Профиль', 'headerTitle' => 'Профиль'])
+@include('layouts.header', ['title' => 'Список сотрудников', 'headerTitle' => 'Список сотрудников'])
     <main>
         <div class="bg-white/80 backdrop-blur-xl mt-4 sm:mt-5 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
             <table class="w-full">

@@ -16,11 +16,11 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 min-h-screen bg-[url('/public/images/wave.svg')] bg-no-repeat bg-bottom">
-    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-3">
+    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-3 animate-fade-in-up">
         <p class="text-xs text-gray-500 font-bold">По вопросам разработки: +7 (927) 040-70-20</p>
         <p class="text-xs text-gray-500 font-bold">Тех. поддержка: 8 (8552) 39-66-11</p>
     </div>
-    <header class="flex justify-between bg-white/80 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
+    <header class="flex justify-between bg-white/95 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370 animate-fade-in-up">
         <div class="flex gap-3 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                 <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />

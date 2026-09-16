@@ -4,8 +4,8 @@
     Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
 --}}    
     
-    <footer>
-        <div class="flex flex-col justify-between bg-[#0099ff]/80 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mb-5 mx-auto rounded-xl shadow-xl max-w-370">
+    <footer class="mt-10 animate-fade-in-up">
+        <div class="flex flex-col justify-between bg-[#0099ff]/90 backdrop-blur-xl mt-4 sm:mt-2 p-3 sm:p-5 mb-5 mx-auto rounded-xl shadow-xl max-w-370">
             <div class="flex justify-center items-center gap-5 pt-5">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-15 text-white">
                     <path d="M16.5 7.5h-9v9h9v-9Z" />

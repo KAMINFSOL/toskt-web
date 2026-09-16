@@ -6,7 +6,7 @@
 
 @include('layouts.header', ['title' => 'Главная оТОиСКТ', 'headerTitle' => 'Отдел ТОиСКТ'])
     <main>
-        <div class="flex flex-col justify-center items-center mt-10">
+        <div class="flex flex-col justify-center items-center mt-10 animate-fade-in-up">
             <h2 class="text-2xl font-bold mb-4">С возвращением, {{ auth()->user()->name }}!</h2>
             <div class="flex gap-3 mt-4 sm:mt-1 p-6 sm:p-5 mx-auto rounded-xl max-w-370 w-full">
                 @foreach ($requests as $request)
@@ -37,7 +37,7 @@
                 @endforeach
             </div>
         </div>
-        <div class="flex justify-center items-center gap-10 mx-10 pb-10">
+        <div class="flex justify-center items-center gap-10 mx-10 pb-10 animate-fade-in-up">
             <div class="flex flex-col justify-center items-center mt-10 bg-white/80 backdrop-blur-xl rounded-xl shadow-xl p-5">
                 <h2 class="text-center text-2xl font-bold mb-4">Сводка по заявкам</h2>
                 <canvas id="requestsChart"></canvas>

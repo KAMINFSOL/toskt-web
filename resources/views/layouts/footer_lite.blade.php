@@ -5,7 +5,7 @@
 --}}
 
 <footer>
-    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-7 mb-5">
+    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-7 mb-5 animate-fade-in-up">
         <p class="text-xs text-white font-bold">© Набережночелнинский институт КФУ</p>
         <p class="text-xs text-white font-bold">Email разработчика: IAFesyanov@kpfu.ru</p>
     </div>

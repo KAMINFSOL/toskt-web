@@ -5,7 +5,7 @@
 --}}
 
 @include('layouts.header', ['title' => 'Инвентаризация', 'headerTitle' => 'Инвентаризация'])
-    <main>
+    <main class="animate-fade-in-up">
         <div class="bg-white/90 backdrop-blur-xl mt-4 sm:mt-5 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
             <div class="flex justify-center gap-5">
                 <a class="flex gap-2 items-center bg-blue-400 p-2 rounded-xl" href="">
