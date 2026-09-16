@@ -37,10 +37,57 @@
                 @endforeach
             </div>
         </div>
-        <div class="flex flex-col justify-center items-center mt-10">
-            <h2 class="text-2xl font-bold mb-4">Основная информация</h2>
-            <div class="flex flex-col items-center justify-center gap-3 mt-4 sm:mt-1 p-6 sm:p-5 mx-auto rounded-xl max-w-370 w-full">
-                @include('partials.files')
+        <div class="flex justify-center items-center gap-5">
+            <div class="flex flex-col justify-center items-center mt-10">
+                <h2 class="text-center text-2xl font-bold mb-4">Сводка по заявкам</h2>
+                <canvas id="requestsChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+                <script>
+                    const ctx = document.getElementById('requestsChart');
+
+                    new Chart(ctx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Новая', 'Выполнена', 'Отменена'],
+                            datasets: [{
+                                data: [
+                                    {{ $data['new'] }},
+                                    {{ $data['done'] }},
+                                    {{ $data['canceled'] }}
+                                ],
+                                backgroundColor: [
+                                    '#0d6efd',
+                                    '#198754',
+                                    '#dc3545'
+                                ],
+                                borderColor: '#fff',
+                                borderWidth:  2
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: { position: 'none' },
+                                tooltip: {
+                                    callbacks: {
+                                        label: (context) => {
+                                            const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                            const value = context.parsed;
+                                            const percent = total ? ((value / total) * 100).toFixed(1) : 0;
+                                            return `${context.label}: ${value} (${percent}%)`;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-10">
+                <h2 class="text-2xl font-bold mb-4">Основная документация</h2>
+                <div class="flex flex-col items-center justify-center gap-3 mt-4 sm:mt-1 p-6 sm:p-5 mx-auto rounded-xl max-w-370 w-full">
+                    @include('partials.files')
+                </div>
             </div>
         </div>
     </main>
