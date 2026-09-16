@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Request extends Model
 {
-    protected $table = 'requests';
-    protected $guarded = [];
+    protected $fillable = [
+        'number',
+        'from',
+        'subdivision',
+        'cabinet',
+        'description',
+        'telephone',
+        'executor',
+        'status'
+    ];
 }

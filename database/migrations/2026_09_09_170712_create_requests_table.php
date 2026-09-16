@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('telephone');
             $table->string('executor');
-            $table->string('status')->nullable();
+            $table->enum('status', ['new', 'done', 'canceled'])->default('new');
             $table->timestamps();
         });
     }
