@@ -29,6 +29,10 @@ Route::get('/operations', [OperationController::class, 'create'])->middleware('a
 
 Route::get('/operations/requests', [RequestController::class, 'create'])->middleware('auth')->name('requests');
 
+Route::get('/operations/requests/new_request', [RequestController::class, 'new_request'])->middleware('auth')->name('new_request');
+
+Route::post('/operations/requests/new_request', [RequestController::class, 'store'])->middleware('auth')->name('new_request');
+
 Route::get('/operations/inventory', [InventoryController::class, 'create'])->middleware('auth')->name('inventory');
 
 Route::get('/operations/inventory/new_cartridge', [InventoryController::class, 'newCartridge'])->middleware('auth')->name('new_cartridge');
@@ -36,6 +40,14 @@ Route::get('/operations/inventory/new_cartridge', [InventoryController::class, '
 Route::post('/operations/inventory/new_cartridge', [InventoryController::class, 'store'])->middleware('auth')->name('new_cartridge');
 
 Route::get('/operations/knowledge_base', [KnowledgeBaseController::class, 'create'])->middleware('auth')->name('knowledge_base');
+
+Route::get('/operations/knowledge_base/new_article', [KnowledgeBaseController::class, 'new_article'])->middleware('auth')->name('new_article');
+
+Route::get('/operations/knowledge_base/new_file', [KnowledgeBaseController::class, 'new_file'])->middleware('auth')->name('new_file');
+
+Route::get('/operations/knowledge_base/download/{id}', [KnowledgeBaseController::class, 'download'])->name('download.file');
+
+Route::post('/operations/knowledge_base/upload', [KnowledgeBaseController::class, 'upload'])->name('upload.file');
 
 Route::get('/opreations/plans', [PlanController::class, 'create'])->middleware('auth')->name('plans');
 
