@@ -37,8 +37,8 @@
                 @endforeach
             </div>
         </div>
-        <div class="flex justify-center items-center gap-5">
-            <div class="flex flex-col justify-center items-center mt-10">
+        <div class="flex justify-center items-center gap-10 mx-10 pb-10">
+            <div class="flex flex-col justify-center items-center mt-10 bg-white/80 backdrop-blur-xl rounded-xl shadow-xl p-5">
                 <h2 class="text-center text-2xl font-bold mb-4">Сводка по заявкам</h2>
                 <canvas id="requestsChart"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -67,7 +67,7 @@
                         options: {
                             responsive: true,
                             plugins: {
-                                legend: { position: 'none' },
+                                legend: { position: 'bottom' },
                                 tooltip: {
                                     callbacks: {
                                         label: (context) => {
@@ -83,9 +83,9 @@
                     });
                 </script>
             </div>
-            <div class="flex flex-col justify-center items-center mt-10">
-                <h2 class="text-2xl font-bold mb-4">Основная документация</h2>
-                <div class="flex flex-col items-center justify-center gap-3 mt-4 sm:mt-1 p-6 sm:p-5 mx-auto rounded-xl max-w-370 w-full">
+            <div class="flex flex-col justify-center items-center mt-10 bg-white/80 backdrop-blur-xl rounded-xl shadow-xl p-5 py-12">
+                <h2 class="text-2xl font-bold">Основная документация</h2>
+                <div class="flex flex-col items-center justify-center gap-3 mt-4 sm:mt-1 p-6 sm:p-5 mx-auto rounded-xl">
                     @include('partials.files')
                 </div>
             </div>
