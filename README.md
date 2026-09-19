@@ -10,9 +10,9 @@
 - Миграция БД
 
 ## Стек
-- **Frontend:** Tailwind CSS
+- **Frontend:** Tailwind CSS, Chart.js (для визуализации данных)
 - **Backend:** Laravel
-- **База данных:** PostgreSQL
+- **База данных:** PostgreSQL (использовалась во время разработки)
 - **Сборка:** Vite
 
 ## Установка и запуск
@@ -34,7 +34,7 @@ npm install tailwindcss @tailwindcss/vite
 cp .env.example .env
 ```
 > [!WARNING]
-> Необходимо ввести драйвер pqsql, имя и порт БД, которая развернута на сервере.
+> Необходимо ввести драйвер, имя и порт БД, которая будет использована
 ### Собрать проект и запустить сервер
 ```
 npm run build
@@ -57,5 +57,5 @@ GNU — подробнее в файле [LICENSE](./LICENSE.md)
 ## Автор
 
 **Илья Фесянов**
-- GitHub: [@q2l3ntk](https://github.com/q2l3ntk)
-- Email: [zurskij@gmail.com](mailto:zurskij@gmail.com)
+- GitHub: [@kaminfsol](https://github.com/KAMINFSOL)
+- Email: [kaminfsol@yandex.ru](kaminfsol@yandex.ru)
