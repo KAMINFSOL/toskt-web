@@ -1,45 +1,24 @@
 {{-- 
     Проект: toskt-web
-    Файл: login.blade.php
+    Файл: new_article.blade.php
     Автор: Copyright (c) 2026, Фесянов Илья (Fesyanov Ilya)
 --}}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Авторизация</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-    @vite('resources/css/app.css')
-</head>
-<body class="min-h-screen bg-[url('/public/images/wave.svg')] bg-no-repeat bg-bottom bg-fixed">
-    <header class="flex justify-center p-5 animate-fade-in-up">
-        <div class="flex flex-col justify-center gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
-                <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901 3.416 9.624a.75.75 0 0 1-.832-1.248l9-6Z" />
-                <path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5h.75v-9.918a.75.75 0 0 1 .634-.74A49.109 49.109 0 0 1 12 9c2.59 0 5.134.202 7.616.592a.75.75 0 0 1 .634.74Zm-7.5 2.418a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0v-6.75Zm3-.75a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0v-6.75a.75.75 0 0 1 .75-.75ZM9 12.75a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0v-6.75Z" clip-rule="evenodd" />
-                <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
-            </svg>
-            <h1 class="font-semibold text-center">Набережночелнинский институт (филиал) КФУ</h1>
-            <h2 class="font-semibold text-center">Отдел технического обеспечения и сопровождения компьютерной техники</h2>
-        </div> 
-    </header>
-    <main class="animate-fade-in-up">
-         <div class="bg-white/80 backdrop-blur-xl mt-6 sm:mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-md w-full">
+@include('layouts.header', ['title' => 'Добавить статью', 'headerTitle' => 'Добавить статью'])
+    <main>
+        <div class="bg-white/80 backdrop-blur-xl mt-6 sm:mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-300 w-full animate-fade-in-up">
             @if ($errors->all())
                 <div class="rounded-md bg-red-50 border border-red-500 p-4 flex gap-3 mb-6">
                     <svg class="w-8 h-8 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                     </svg>                  
-                    <h3 class="text-sm font-medium text-red-800">Не удалось произвести вход. Введённые данные некорректны</h3>
+                    <h3 class="text-sm font-medium text-red-800">Введённые данные некорректны</h3>
                 </div> 
             @endif
-            <form action="{{ route('login') }}" autocomplete="off" novalidate method="POST">
+            <form action="" autocomplete="off" novalidate method="POST">
                 @csrf
                 <div class="mb-6">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Электронная почта</label>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Название</label>
                     <div class="relative rounded-md shadow-sm mt-1">
                         <div class="absolute left-0 inset-y-0 flex items-center pl-3">
                             <svg class="h-5 w-5 {{ $errors->has('email') ? 'text-red-400' : 'text-gray-400' }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

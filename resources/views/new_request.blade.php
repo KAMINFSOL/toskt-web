@@ -6,7 +6,7 @@
 
 @include('layouts.header', ['title' => 'Новая заявка', 'headerTitle' => 'Новая заявка'])
     <main>
-        <div class="bg-white/80 backdrop-blur-xl mt-6 sm:mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-300 w-full">
+        <div class="bg-white/80 backdrop-blur-xl mt-6 sm:mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-300 w-full animate-fade-in-up">
             @if ($errors->all())
                 <div class="rounded-md bg-red-50 border border-red-500 p-4 flex gap-3 mb-6">
                     <svg class="w-8 h-8 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

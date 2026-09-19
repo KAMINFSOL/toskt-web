@@ -6,7 +6,7 @@
 
 @include('layouts.header', ['title' => 'Учёт рабочего времени', 'headerTitle' => 'Учет рабочего времени'])
     <main>
-        <div class="bg-white/80 backdrop-blur-xl mt-4 sm:mt-5 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
+        <div class="bg-white/80 backdrop-blur-xl mt-4 sm:mt-5 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370 animate-fade-in-up">
             <table class="w-full">
                 <thead>
                     <tr>

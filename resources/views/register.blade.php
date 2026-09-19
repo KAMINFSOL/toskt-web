@@ -15,7 +15,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="min-h-screen bg-[url('/public/images/wave.svg')] bg-no-repeat bg-bottom bg-fixed">
-    <header class="flex justify-center p-5">
+    <header class="flex justify-center p-5 animate-fade-in-up">
         <div class="flex flex-col justify-center gap-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                 <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z" clip-rule="evenodd" />
@@ -23,7 +23,7 @@
             <h2 class="font-semibold text-center">Отдел технического обеспечения и сопровождения компьютерной техники</h2>
         </div> 
     </header>
-    <main class="flex flex-col justify-center p-6 pb-12">
+    <main class="flex flex-col justify-center p-6 pb-12 animate-fade-in-up">
         <div class="bg-white/80 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-md w-full">
             <form action="{{ route('register') }}" autocomplete="off" method="POST">
                 @csrf
