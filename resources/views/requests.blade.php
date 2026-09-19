@@ -29,6 +29,9 @@
                     </div>
                 </div>
             @endforeach
+            <div class="">
+                {{ $requests->links() }}
+            </div>
         </div>
     </main>
     @include('layouts.footer_lite')

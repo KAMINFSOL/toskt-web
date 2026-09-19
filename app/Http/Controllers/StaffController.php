@@ -9,8 +9,8 @@ class StaffController extends Controller
 {
     public function create()
     {
-        $users = DB::table('users')->get();
-        return view('staff')->with('users', $users);
+        $users = DB::table('users')->paginate(5);
+        return view('staff', compact('users'));
     }
 
     public function accounting_journal()

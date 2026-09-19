@@ -10,8 +10,10 @@ class RequestController extends Controller
 {
     public function create()
     {
-        $requests = DB::table('requests')->where('executor', Auth::user()->name)->latest()->get();
-        return view('requests')->with('requests', $requests);
+        $requests = DB::table('requests')->where('executor', Auth::user()->name)->paginate(5);
+        //$requests->setCollection($requests->getCollection()->reverse()->values());
+
+        return view('requests', compact('requests'));
     }
 
     public function new_request()
