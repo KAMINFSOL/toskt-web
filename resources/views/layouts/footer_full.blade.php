@@ -33,9 +33,9 @@
                 </div>
                 <div class="flex flex-col gap-1 p-5">
                     <h2 class="text-xl font-bold text-white">Сотрудники</h2>
-                    <a href="" class="text-base text-white">Общая информация</a>
-                    <a href="" class="text-base text-white">База знаний</a>
-                    <a href="" class="text-base text-white">Инвентаризация</a>
+                    <a href="{{ route('staff') }}" class="text-base text-white">Общая информация</a>
+                    <a href="{{ route('knowledge_base') }}" class="text-base text-white">База знаний</a>
+                    <a href="{{ route('inventory') }}" class="text-base text-white">Инвентаризация</a>
                 </div>
                 <div class="flex flex-col gap-1 p-5">
                     <h2 class="text-xl font-bold text-white">Клиенты и поставщики</h2>
