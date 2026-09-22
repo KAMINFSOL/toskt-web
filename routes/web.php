@@ -13,13 +13,13 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\TimeTrackingController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [LoginController::class, 'create'])->name('login');
+Route::get('/', [LoginController::class, 'create'])->middleware('guest')->name('login');
 
-Route::post('/', [LoginController::class, 'store'])->name('login');
+Route::post('/', [LoginController::class, 'store'])->middleware('guest')->name('login');
 
-Route::get('/register', [RegisterController::class, 'create'])->name('register');
+Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
 
-Route::post('/register', [RegisterController::class, 'store'])->name('register');
+Route::post('/register', [RegisterController::class, 'store'])->middleware('guest')->name('register');
 
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
 
