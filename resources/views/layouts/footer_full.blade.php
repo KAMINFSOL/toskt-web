@@ -64,5 +64,7 @@
         <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-3 mb-5">
             <p class="text-xs text-white font-bold">© Набережночелнинский институт КФУ</p>
             <p class="text-xs text-white font-bold">Email разработчика: IAFesyanov@kpfu.ru</p>
+            <p class="text-xs text-white font-bold">По вопросам разработки: +7 (927) 040-70-20</p>
+            <p class="text-xs text-white font-bold">Тех. поддержка: 8 (8552) 39-66-11</p>
         </div>
     </footer>
