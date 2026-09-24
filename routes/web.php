@@ -53,6 +53,10 @@ Route::get('/opreations/plans', [PlanController::class, 'create'])->middleware('
 
 Route::get('/operations/time_tracking', [TimeTrackingController::class, 'create'])->middleware('auth')->name('time_tracking');
 
+Route::get('/operations/time_tracking/time_mark', [TimeTrackingController::class, 'timeMark'])->middleware('auth')->name('time_mark');
+
+Route::post('/operations/time_tracking/time_mark', [TimeTrackingController::class, 'store'])->middleware('auth')->name('time_mark');
+
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
 
 Route::get('/profile/staff', [StaffController::class, 'create'])->middleware('auth')->name('staff');

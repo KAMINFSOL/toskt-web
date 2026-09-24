@@ -5,8 +5,12 @@
 --}}
 
 @include('layouts.header', ['title' => 'Учёт рабочего времени', 'headerTitle' => 'Учет рабочего времени'])
-    <main>
-        <div class="bg-white/80 backdrop-blur-xl mt-4 sm:mt-5 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370 animate-fade-in-up">
+    <main class="animate-fade-in-up">
+        <div class="flex gap-5 p-5">
+            <a href="{{ route('time_mark') }}" class="flex justify-center items-center rounded-md bg-blue-400 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl
+            hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150 ease-in-out cursor-pointer">+ Отметиться</a>
+        </div>
+        <div class="bg-white/95 backdrop-blur-xl mt-2 sm:mt-2 p-3 sm:p-5 mx-auto rounded-xl shadow-xl max-w-370">
             <table class="w-full">
                 <thead>
                     <tr>
@@ -27,6 +31,9 @@
                     @endforeach
                 </tbody>
             </table>
+            <div class="mt-2">
+                {{ $timeTrackings->links() }}
+            </div>
         </div>
     </main>
     @include('layouts.footer_lite')
