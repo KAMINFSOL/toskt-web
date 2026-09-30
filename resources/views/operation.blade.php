@@ -7,14 +7,14 @@
 @include('layouts.header', ['title' => 'Управление', 'headerTitle' => 'Управление'])
     <main class="mt-2 max-w-200 mx-auto animate-fade-in-up">
         <div class="grid grid-cols-3">
-            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-10 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50" href="{{ route('requests') }}">
+            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-10 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg" href="{{ route('requests') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
                     <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700">Мои заявки</h3>
             </a>
-            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50" href="{{ route('inventory') }}">
+            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg" href="{{ route('inventory') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path d="M5.507 4.048A3 3 0 0 1 7.785 3h8.43a3 3 0 0 1 2.278 1.048l1.722 2.008A4.533 4.533 0 0 0 19.5 6h-15c-.243 0-.482.02-.715.056l1.722-2.008Z" />
                     <path fill-rule="evenodd" d="M1.5 10.5a3 3 0 0 1 3-3h15a3 3 0 1 1 0 6h-15a3 3 0 0 1-3-3Zm15 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm2.25.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM4.5 15a3 3 0 1 0 0 6h15a3 3 0 1 0 0-6h-15Zm11.25 3.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM19.5 18a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" clip-rule="evenodd" />
@@ -28,7 +28,7 @@
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700 text-center">Договоры и поставщики</h3>
             </div>
-            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50" href="{{ route('knowledge_base') }}">
+            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg" href="{{ route('knowledge_base') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
                     <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
@@ -36,7 +36,7 @@
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700">База знаний</h3>
             </a>
-            <a href="{{ route('plans') }}" class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50">
+            <a href="{{ route('plans') }}" class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z" clip-rule="evenodd" />
                 </svg>
@@ -48,7 +48,7 @@
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700">Интеграции</h3>
             </div>
-            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50" href="{{ route('time_tracking') }}">
+            <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg" href="{{ route('time_tracking') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
                 </svg>
