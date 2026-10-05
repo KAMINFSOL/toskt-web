@@ -21,13 +21,13 @@
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700">Инвентаризация</h3>
             </a>
-            <div class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50">
+            <a href="{{ route('contracts') }}" class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                     <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
                 </svg>
                 <h3 class="mt-5 block text-sm font-medium text-gray-700 text-center">Договоры и поставщики</h3>
-            </div>
+            </a>
             <a class="bg-white/95 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl flex flex-col justify-center items-center w-50 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg" href="{{ route('knowledge_base') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 text-blue-400">
                     <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContractController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\KnowledgeBaseController;
@@ -56,6 +57,8 @@ Route::get('/operations/time_tracking', [TimeTrackingController::class, 'create'
 Route::get('/operations/time_tracking/time_mark', [TimeTrackingController::class, 'timeMark'])->middleware('auth')->name('time_mark');
 
 Route::post('/operations/time_tracking/time_mark', [TimeTrackingController::class, 'store'])->middleware('auth')->name('time_mark');
+
+Route::get('/operations/contracts', [ContractController::class, 'create'])->middleware('auth')->name('contracts');
 
 Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
 
