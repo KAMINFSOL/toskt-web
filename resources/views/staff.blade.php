@@ -29,7 +29,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="">
+        <div class="mx-5 mt-3">
             {{ $users->links() }}
         </div>
     </main>

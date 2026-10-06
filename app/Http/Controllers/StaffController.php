@@ -9,7 +9,7 @@ class StaffController extends Controller
 {
     public function create()
     {
-        $users = DB::table('users')->paginate(5);
+        $users = DB::table('users')->paginate(8);
         return view('staff', compact('users'));
     }
 
