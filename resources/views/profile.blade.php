@@ -6,7 +6,7 @@
 
 @include('layouts.header', ['title' => 'Профиль', 'headerTitle' => 'Профиль'])
     <main>
-        <div class="flex flex-col items-center gap-5 bg-white/80 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-200 animate-fade-in-up">
+        <div class="flex flex-col items-center gap-5 bg-white/80 backdrop-blur-xl mt-4 sm:mt-6 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-200 animate-fade-in-up transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg">
             <div class="flex gap-5">
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-35 text-blue-400">
