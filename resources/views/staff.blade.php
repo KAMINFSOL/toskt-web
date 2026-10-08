@@ -29,7 +29,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="mx-5 mt-3">
+        <div class="mx-5 mt-3 animate-fade-in-up">
             {{ $users->links() }}
         </div>
     </main>

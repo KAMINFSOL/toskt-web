@@ -65,3 +65,9 @@ Route::get('/profile', [ProfileController::class, 'create'])->middleware('auth')
 Route::get('/profile/staff', [StaffController::class, 'create'])->middleware('auth')->name('staff');
 
 Route::get('/profile/accounting_journal', [StaffController::class, 'accounting_journal'])->middleware('auth')->name('accounting_journal');
+
+Route::get('/profile/edit', [ProfileController::class, 'profileEdit'])->middleware('auth')->name('profile_edit');
+
+Route::put('/profile/update', [ProfileController::class, 'update'])->middleware('auth')->name('profile_update');
+
+//Route::resource('/profile/edit', ProfileController::class)->only(['profileEdit', 'update']);

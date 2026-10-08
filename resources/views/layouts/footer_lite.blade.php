@@ -5,7 +5,7 @@
 --}}
 
 <footer>
-    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-9 mb-5 animate-fade-in-up">
+    <div class="flex justify-center gap-5 max-w-370 item-center mx-auto mt-5 mb-3 animate-fade-in-up">
         <p class="text-xs text-white font-bold">© НЧИ КФУ отдел ТОиСКТ</p>
         <p class="text-xs text-white font-bold">Email разработчика: IAFesyanov@kpfu.ru</p>
     </div>

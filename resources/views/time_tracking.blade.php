@@ -31,9 +31,9 @@
                     @endforeach
                 </tbody>
             </table>
-            <div class="mt-2">
-                {{ $timeTrackings->links() }}
-            </div>
+        </div>
+        <div class="mt-3 mx-5 animate-fade-in-up">
+            {{ $timeTrackings->links() }}
         </div>
     </main>
     @include('layouts.footer_lite')
