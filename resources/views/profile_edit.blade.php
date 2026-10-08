@@ -1,55 +1,5 @@
 @include('layouts.header', ['title' => 'Редактировать профиль', 'headerTitle' => 'Редактировать профиль'])
     <main>
-        {{-- <form method="POST" action="{{ route('profile_edit', $user) }}">
-            @csrf
-            @method('PUT')
-
-            <div>
-                <label for="name">ФИО</label>
-                <input id="name" type="text" name="name"
-                    value="{{ old('name', $user->name) }}">
-                @error('name')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <div>
-                <label for="birth_date">Дата рождения</label>
-                <input type="date" id="birth_date" name="birth_date" value="{{ old('birth_date', $user->birth_date) }}">
-                @error('birth_date')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email"
-                    value="{{ old('email', $user->email) }}">
-                @error('email')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <div>
-                <label for="post">Должность</label>
-                <input id="post" type="text" name="post"
-                    value="{{ old('post', $user->post) }}">
-                @error('post')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <div>
-                <label for="subdivision">Подразделение/Отдел</label>
-                <input id="subdivision" type="text" name="subdivision"
-                    value="{{ old('subdivision', $user->subdivision) }}">
-                @error('subdivision')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <button type="submit">Сохранить</button>
-        </form> --}}
         <div class="bg-white/80 backdrop-blur-xl mt-6 sm:mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl max-w-md w-full animate-fade-in-up">
             @if (session('status'))
                 <div class="rounded-md bg-green-50 border border-green-500 p-4 flex items-center gap-3 mb-6">
