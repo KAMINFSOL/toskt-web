@@ -20,8 +20,9 @@ class ProfileController extends Controller
         return view('profile_edit', compact('user'));
     }
 
-    public function update(EditProfileRequest $request, User $user)
+    public function update(EditProfileRequest $request)
     {
+        $user = Auth::user();
         $user->update($request->validated());
         
         return redirect()
