@@ -20,8 +20,8 @@ class KnowledgeBaseController extends Controller
 
    public function new_file()
    {
-      $files = File::first(3)->get();
-      return view('new_file', compact('files'));
+      //$files = File::first(3)->get();
+      return view('new_file');
    }
 
    public function upload(Request $request)

@@ -43,6 +43,6 @@
             </div>
         </div>
     </main>
-    @include('layouts.footer_lite')
+    {{-- @include('layouts.footer_lite') --}}
 </body>
 </html>
