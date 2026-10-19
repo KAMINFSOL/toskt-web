@@ -6,7 +6,7 @@
 
 @include('layouts.header', ['title' => 'Инвентаризация', 'headerTitle' => 'Инвентаризация'])
     <main class="animate-fade-in-up">
-        <div class="flex p-5">
+        <div class="flex p-3 mt-4 sm:mt-4 sm:p-1 mx-auto max-w-370">
             <a href="{{ route('new_cartridge') }}" class="flex justify-center items-center rounded-md bg-blue-400 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl
             hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150 ease-in-out cursor-pointer">+ Добавить картридж</a>
         </div>
