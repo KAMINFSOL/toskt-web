@@ -19,7 +19,8 @@ class RequestController extends Controller
     public function new_request()
     {
         $subdivisions = DB::table('subdivisions')->get();
-        return view('new_request')->with('subdivisions', $subdivisions);
+        $users = DB::table('users')->get();
+        return view('new_request')->with('subdivisions', $subdivisions)->with('users', $users);
     }
 
     public function store(Request $request)
