@@ -22,7 +22,7 @@
                     <div class="">
                         <div class="flex gap-3">
                             <h3 class="font-bold">{{ $request->number }} {{ Carbon\Carbon::parse($request->created_at)->format('d.m.Y H:i') }}</h3>
-                            <span class="bg-blue-400 px-2 rounded-md font-bold text-white">Выполнена</span>
+                            <a href="{{ route('change_request_status', $request->id) }}" class="bg-blue-400 px-2 rounded-md font-bold text-white">Выполнена</a>
                         </div>
                         <p>{{ $request->from }} {{ $request->subdivision }} {{ $request->telephone }}</p>
                         <p>{{ $request->cabinet }} {{ $request->description }}</p>

@@ -34,6 +34,8 @@ Route::get('/operations/requests/new_request', [RequestController::class, 'new_r
 
 Route::post('/operations/requests/new_request', [RequestController::class, 'store'])->middleware('auth')->name('new_request');
 
+Route::get('/operations/requests/change_request_status/{id}', [RequestController::class, 'changeStatus'])->middleware('auth')->name('change_request_status');
+
 Route::get('/operations/inventory', [InventoryController::class, 'create'])->middleware('auth')->name('inventory');
 
 Route::get('/operations/inventory/new_cartridge', [InventoryController::class, 'newCartridge'])->middleware('auth')->name('new_cartridge');

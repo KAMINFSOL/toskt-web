@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\EditRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -21,6 +22,17 @@ class RequestController extends Controller
         $subdivisions = DB::table('subdivisions')->get();
         $users = DB::table('users')->get();
         return view('new_request')->with('subdivisions', $subdivisions)->with('users', $users);
+    }
+
+    public function changeStatus($id) 
+    {
+        $requests = DB::table('requests')->where('id', $id)->get();
+        return view('change_request_status')->with('requests', $requests);
+    }
+
+    public function update(EditRequest $request) 
+    {
+        
     }
 
     public function store(Request $request)
